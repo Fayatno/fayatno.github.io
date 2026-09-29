@@ -7,7 +7,12 @@
     <title>Fayatno — Threads Management Platform</title>
     <meta name="description" content="Fayatno is a platform designed to help users manage and publish content on Threads.">
 
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,16 +21,22 @@
     <div class="container nav-inner">
 
         <a href="index.html" class="brand">
-            <span class="brand-mark">F</span>
+            <span class="brand-mark">
+                <i class="fa-solid fa-feather"></i>
+            </span>
             <span>Fayatno</span>
         </a>
 
         <nav>
             <a href="#features">Features</a>
-            <a href="#threads">Threads</a>
+            <a href="#threads">Threads API</a>
             <a href="#about">About</a>
             <a href="privacy.html">Privacy</a>
         </nav>
+
+        <button class="mobile-menu" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
     </div>
 </header>
@@ -41,6 +52,7 @@
             <div class="hero-content">
 
                 <div class="eyebrow">
+                    <i class="fa-solid fa-circle-nodes"></i>
                     THREADS MANAGEMENT PLATFORM
                 </div>
 
@@ -56,47 +68,96 @@
                 </p>
 
                 <div class="hero-buttons">
+
                     <a href="#threads" class="btn btn-primary">
                         Explore Fayatno
+                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
                     <a href="privacy.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-shield-halved"></i>
                         Privacy Policy
                     </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <i class="fa-solid fa-lock"></i>
+                    Your account remains under your control.
                 </div>
 
             </div>
 
 
+            <!-- APP PREVIEW -->
+
             <div class="hero-card">
 
                 <div class="window-top">
+
                     <span></span>
                     <span></span>
                     <span></span>
+
                 </div>
 
                 <div class="dashboard-preview">
 
                     <div class="preview-header">
-                        <div class="preview-avatar">F</div>
+
+                        <div class="preview-avatar">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
 
                         <div>
                             <strong>Fayatno</strong>
                             <small>Threads Management</small>
                         </div>
+
+                        <div class="preview-status">
+                            <i class="fa-solid fa-circle"></i>
+                            Connected
+                        </div>
+
                     </div>
 
+
                     <div class="preview-post">
+
+                        <div class="post-meta">
+                            <span class="post-avatar"></span>
+
+                            <div>
+                                <div class="post-name"></div>
+                                <div class="post-time"></div>
+                            </div>
+                        </div>
+
                         <div class="post-line large"></div>
                         <div class="post-line"></div>
                         <div class="post-line short"></div>
+
                     </div>
 
+
                     <div class="preview-actions">
-                        <span>♡</span>
-                        <span>◯</span>
-                        <span>↗</span>
+
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-comment"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-repeat"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </span>
+
                     </div>
 
                 </div>
@@ -109,12 +170,16 @@
 
 
     <!-- FEATURES -->
+
     <section id="features" class="section">
 
         <div class="container">
 
             <div class="section-heading">
-                <span class="section-label">CAPABILITIES</span>
+
+                <span class="section-label">
+                    CAPABILITIES
+                </span>
 
                 <h2>
                     Built around the Threads API.
@@ -125,6 +190,7 @@
                     to provide functionality for content and interaction
                     management.
                 </p>
+
             </div>
 
 
@@ -132,9 +198,17 @@
 
                 <article class="feature-card">
 
-                    <div class="feature-icon">01</div>
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
 
-                    <h3>Threads Access</h3>
+                    <span class="feature-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Threads Access
+                    </h3>
 
                     <p>
                         Connect an authorized Threads account with Fayatno
@@ -146,9 +220,17 @@
 
                 <article class="feature-card">
 
-                    <div class="feature-icon">02</div>
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
 
-                    <h3>Content Publishing</h3>
+                    <span class="feature-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Content Publishing
+                    </h3>
 
                     <p>
                         Create and publish Threads content through
@@ -160,9 +242,17 @@
 
                 <article class="feature-card">
 
-                    <div class="feature-icon">03</div>
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
 
-                    <h3>Reply Management</h3>
+                    <span class="feature-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Reply Management
+                    </h3>
 
                     <p>
                         Read and manage replies associated with content
@@ -178,7 +268,8 @@
     </section>
 
 
-    <!-- THREADS PERMISSIONS -->
+    <!-- THREADS API -->
+
     <section id="threads" class="section section-dark">
 
         <div class="container">
@@ -186,11 +277,12 @@
             <div class="section-heading light">
 
                 <span class="section-label">
+                    <i class="fa-solid fa-code"></i>
                     THREADS API
                 </span>
 
                 <h2>
-                    Requested permissions
+                    Requested permissions.
                 </h2>
 
                 <p>
@@ -205,56 +297,96 @@
 
                 <div class="permission">
 
-                    <div>
-                        <code>threads_basic</code>
+                    <div class="permission-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="permission-content">
+
+                        <code>
+                            threads_basic
+                        </code>
 
                         <p>
                             Access basic information associated with the
                             authorized Threads account.
                         </p>
+
                     </div>
+
+                    <i class="fa-solid fa-check permission-check"></i>
 
                 </div>
 
 
                 <div class="permission">
 
-                    <div>
-                        <code>threads_content_publish</code>
+                    <div class="permission-icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+
+                    <div class="permission-content">
+
+                        <code>
+                            threads_content_publish
+                        </code>
 
                         <p>
                             Allow Fayatno to publish Threads content
                             on behalf of an authorized user.
                         </p>
+
                     </div>
+
+                    <i class="fa-solid fa-check permission-check"></i>
 
                 </div>
 
 
                 <div class="permission">
 
-                    <div>
-                        <code>threads_read_replies</code>
+                    <div class="permission-icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+
+                    <div class="permission-content">
+
+                        <code>
+                            threads_read_replies
+                        </code>
 
                         <p>
                             Allow Fayatno to read replies required by
                             the application's reply-management features.
                         </p>
+
                     </div>
+
+                    <i class="fa-solid fa-check permission-check"></i>
 
                 </div>
 
 
                 <div class="permission">
 
-                    <div>
-                        <code>threads_manage_replies</code>
+                    <div class="permission-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <div class="permission-content">
+
+                        <code>
+                            threads_manage_replies
+                        </code>
 
                         <p>
                             Allow Fayatno to perform permitted reply
                             management actions on behalf of an authorized user.
                         </p>
+
                     </div>
+
+                    <i class="fa-solid fa-check permission-check"></i>
 
                 </div>
 
@@ -266,6 +398,7 @@
 
 
     <!-- ABOUT -->
+
     <section id="about" class="section">
 
         <div class="container about-grid">
@@ -303,10 +436,52 @@
     </section>
 
 
+    <!-- SECURITY -->
+
+    <section class="security-section">
+
+        <div class="container security-grid">
+
+            <div class="security-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+
+                <span class="section-label">
+                    PRIVACY & CONTROL
+                </span>
+
+                <h2>
+                    Designed with user control in mind.
+                </h2>
+
+                <p>
+                    Fayatno only accesses Threads functionality through
+                    permissions authorized by the user.
+                </p>
+
+            </div>
+
+            <a href="privacy.html" class="btn btn-secondary">
+                Read Privacy Policy
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
     <!-- CTA -->
+
     <section class="cta">
 
         <div class="container">
+
+            <div class="cta-icon">
+                <i class="fa-solid fa-feather"></i>
+            </div>
 
             <h2>
                 Your data, your account, your control.
@@ -320,10 +495,12 @@
             <div class="hero-buttons">
 
                 <a href="privacy.html" class="btn btn-light">
+                    <i class="fa-solid fa-shield-halved"></i>
                     Privacy Policy
                 </a>
 
                 <a href="data-deletion.html" class="btn btn-outline-light">
+                    <i class="fa-solid fa-trash-can"></i>
                     Data Deletion
                 </a>
 
@@ -341,26 +518,64 @@
     <div class="container footer-inner">
 
         <div>
-            <strong>Fayatno</strong>
-            <p>Threads Management Platform</p>
+
+            <a href="index.html" class="footer-brand">
+
+                <span class="brand-mark">
+                    <i class="fa-solid fa-feather"></i>
+                </span>
+
+                <span>Fayatno</span>
+
+            </a>
+
+            <p>
+                Threads Management Platform
+            </p>
+
         </div>
 
+
         <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="data-deletion.html">Data Deletion</a>
-            <a href="contact.html">Contact</a>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="terms.html">
+                Terms of Service
+            </a>
+
+            <a href="data-deletion.html">
+                Data Deletion
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
         </div>
 
     </div>
 
+
     <div class="container copyright">
-        © 2026 Fayatno. All rights reserved.
+
+        <span>
+            © 2026 Fayatno. All rights reserved.
+        </span>
+
+        <span>
+            <i class="fa-solid fa-lock"></i>
+            Secure & Privacy Focused
+        </span>
+
     </div>
 
 </footer>
 
-<script src="assets/script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
